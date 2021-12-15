@@ -18,6 +18,6 @@ discover = unittest.defaultTestLoader.discover(start_dir=CaseDir, pattern="test_
 path = BASE_DIR + '\\report\\'+ now + "result.html"
 fp = open(path, 'wb')
 
-runner = HTMLTestRunner(stream=fp, title=u"Web页面自动化测试111", description=u"测试查询功能")
+runner = HTMLTestRunner(stream=fp, title=u"Web页面自动化测试", description=u"测试查询功能")
 runner.run(discover)
 fp.close()

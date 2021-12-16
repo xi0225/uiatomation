@@ -4,8 +4,7 @@ import unittest
 
 from HTMLTestRunner import HTMLTestRunner
 import sys
-path ='C:\\Users\\wbhuyue\\.jenkins\\workspace\\autotest' #写入项目路径
-sys.path.append(path)
+sys.path.append(os.getcwd())
 
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 

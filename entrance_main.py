@@ -16,7 +16,7 @@ now = time.strftime("%Y-%m-%d-%H-%M-%S")
 CaseDir = BASE_DIR+'\\testcase\\'
 discover = unittest.defaultTestLoader.discover(start_dir=CaseDir, pattern="test_baiduSearch.py")
 
-path = BASE_DIR + '\\report\\'+ now + "result.html"
+path = BASE_DIR + '\\report\\'+ "index.html"
 fp = open(path, 'wb')
 
 runner = HTMLTestRunner(stream=fp, title=u"Web页面自动化测试", description=u"测试查询功能")
